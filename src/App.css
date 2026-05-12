@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #050814;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  color-scheme: dark;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Page stays black, but with subtle atmosphere */
+.btg-page {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(37, 99, 235, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 20%, rgba(34, 211, 238, 0.16), transparent 30%),
+    radial-gradient(circle at 10% 92%, rgba(124, 58, 237, 0.16), transparent 32%),
+    #050814 !important;
+}
+
+/* Header stays dark */
+.btg-page header {
+  background: rgba(5, 8, 20, 0.92) !important;
+}
+
+/* Force every major rounded panel to show color */
+.btg-page main section > div[class*="rounded-"],
+.btg-page main section > div > div[class*="rounded-"] {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.22), transparent 36%),
+    radial-gradient(circle at bottom right, rgba(37, 99, 235, 0.18), transparent 40%),
+    linear-gradient(135deg, rgba(18, 32, 62, 0.98), rgba(10, 18, 39, 0.98)) !important;
+  border-color: rgba(125, 211, 252, 0.28) !important;
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Force all article/cards to show color */
+.btg-page article,
+.btg-page .space-y-3 > div,
+.btg-page .space-y-4 > div {
+  background:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.24), transparent 38%),
+    radial-gradient(circle at bottom left, rgba(34, 211, 238, 0.16), transparent 42%),
+    linear-gradient(145deg, rgba(23, 37, 84, 0.96), rgba(15, 23, 42, 0.98)) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Three info cards after hero */
+.btg-page main section:nth-of-type(2) .grid > div:nth-child(1) {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.42), transparent 48%),
+    linear-gradient(145deg, rgba(14, 116, 144, 0.36), rgba(15, 23, 42, 0.96)) !important;
+  border-color: rgba(103, 232, 249, 0.42) !important;
+}
+
+.btg-page main section:nth-of-type(2) .grid > div:nth-child(2) {
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.42), transparent 48%),
+    linear-gradient(145deg, rgba(88, 28, 135, 0.38), rgba(15, 23, 42, 0.96)) !important;
+  border-color: rgba(216, 180, 254, 0.42) !important;
+}
+
+.btg-page main section:nth-of-type(2) .grid > div:nth-child(3) {
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.42), transparent 48%),
+    linear-gradient(145deg, rgba(30, 64, 175, 0.4), rgba(15, 23, 42, 0.96)) !important;
+  border-color: rgba(147, 197, 253, 0.42) !important;
+}
+
+/* Venture cards get different moods */
+.btg-page #ventures article:nth-child(1) {
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.35), transparent 42%),
+    linear-gradient(145deg, rgba(67, 20, 7, 0.55), rgba(15, 23, 42, 0.98)) !important;
+}
+
+.btg-page #ventures article:nth-child(2) {
+  background:
+    radial-gradient(circle at top right, rgba(139, 92, 246, 0.35), transparent 42%),
+    linear-gradient(145deg, rgba(46, 16, 101, 0.55), rgba(15, 23, 42, 0.98)) !important;
+}
+
+.btg-page #ventures article:nth-child(3) {
+  background:
+    radial-gradient(circle at top right, rgba(244, 63, 94, 0.32), transparent 42%),
+    linear-gradient(145deg, rgba(76, 5, 25, 0.55), rgba(15, 23, 42, 0.98)) !important;
+}
+
+.btg-page #ventures article:nth-child(4) {
+  background:
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.32), transparent 42%),
+    linear-gradient(145deg, rgba(6, 78, 59, 0.5), rgba(15, 23, 42, 0.98)) !important;
+}
+
+.btg-page #ventures article:nth-child(5) {
+  background:
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.36), transparent 42%),
+    linear-gradient(145deg, rgba(30, 27, 75, 0.6), rgba(15, 23, 42, 0.98)) !important;
+}
+
+/* GuardX card */
+.btg-page #products article {
+  background:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.42), transparent 42%),
+    radial-gradient(circle at bottom left, rgba(34, 211, 238, 0.2), transparent 42%),
+    linear-gradient(145deg, rgba(30, 64, 175, 0.42), rgba(15, 23, 42, 0.98)) !important;
+  border-color: rgba(147, 197, 253, 0.36) !important;
+}
+
+/* Build cards */
+.btg-page #build .grid > div[class*="rounded-"] {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 42%),
+    linear-gradient(145deg, rgba(30, 41, 59, 0.92), rgba(15, 23, 42, 0.98)) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* Contact form */
+.btg-page form {
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.18), transparent 40%),
+    linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(8, 13, 30, 0.98)) !important;
+  border-color: rgba(125, 211, 252, 0.26) !important;
+}
+
+.btg-page input,
+.btg-page textarea,
+.btg-page select {
+  background: rgba(15, 23, 42, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Footer stays dark */
+.btg-page footer {
+  background: rgba(5, 8, 20, 0.95) !important;
+}
