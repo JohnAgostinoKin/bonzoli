@@ -1,0 +1,106 @@
+cat > public/disclaimer.html <<'EOF'
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disclaimer | Bonzoli Technology Group</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #050814;
+        color: #f8fafc;
+        line-height: 1.7;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 56px 22px 80px;
+      }
+      a { color: #67e8f9; }
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        line-height: 1;
+        margin: 0 0 16px;
+      }
+      h2 {
+        margin-top: 38px;
+        color: #bae6fd;
+      }
+      p, li {
+        color: #cbd5e1;
+      }
+      .card {
+        border: 1px solid rgba(125, 211, 252, 0.22);
+        background:
+          radial-gradient(circle at top left, rgba(124, 58, 237, 0.16), transparent 35%),
+          linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(8, 13, 30, 0.98));
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: 0 24px 80px rgba(0,0,0,.35);
+      }
+      .toplink {
+        display: inline-block;
+        margin-bottom: 34px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .updated {
+        color: #94a3b8;
+        margin-bottom: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <a class="toplink" href="/">← Back to Bonzoli</a>
+
+      <div class="card">
+        <h1>Disclaimer</h1>
+        <p class="updated">Last updated: May 12, 2026</p>
+
+        <p>
+          The information provided on this website is for general informational and business communication purposes only.
+        </p>
+
+        <h2>No Professional Advice</h2>
+        <p>
+          Nothing on this website should be interpreted as legal, financial, investment, tax, technical, medical, or professional advice. You should consult qualified professionals before making decisions based on information found on this website or related Bonzoli communications.
+        </p>
+
+        <h2>No Investment Offering</h2>
+        <p>
+          References to Bonzoli Technology Group, its ventures, products, concepts, prototypes, growth plans, or opportunities are informational only. Nothing on this website constitutes an offer to sell securities, a solicitation to invest, or a guarantee of future results.
+        </p>
+
+        <h2>Forward-Looking Statements</h2>
+        <p>
+          This website may contain forward-looking statements, plans, goals, concepts, or projections regarding products, ventures, markets, or business opportunities. These statements are inherently uncertain and may change. Actual results may differ materially.
+        </p>
+
+        <h2>Product and Venture Status</h2>
+        <p>
+          Some Bonzoli ventures may be concepts, prototypes, early-stage projects, or products in development. Features, names, availability, pricing, launch timing, and business models may change or may never be released.
+        </p>
+
+        <h2>Third-Party Content and Links</h2>
+        <p>
+          This website may reference third-party websites, platforms, companies, products, or services. Bonzoli Technology Group does not control and is not responsible for third-party content, policies, or practices.
+        </p>
+
+        <h2>No Guarantees</h2>
+        <p>
+          We make no guarantees regarding the accuracy, completeness, reliability, availability, or suitability of the information on this website. Use of this website is at your own risk.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this Disclaimer may be sent to:
+          <a href="mailto:info@bonzoli.com"></a>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
+EOF

@@ -1,0 +1,115 @@
+cat > public/privacy.html <<'EOF'
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Bonzoli Technology Group</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #050814;
+        color: #f8fafc;
+        line-height: 1.7;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 56px 22px 80px;
+      }
+      a { color: #67e8f9; }
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        line-height: 1;
+        margin: 0 0 16px;
+      }
+      h2 {
+        margin-top: 38px;
+        color: #bae6fd;
+      }
+      p, li {
+        color: #cbd5e1;
+      }
+      .card {
+        border: 1px solid rgba(125, 211, 252, 0.22);
+        background:
+          radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 35%),
+          linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(8, 13, 30, 0.98));
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: 0 24px 80px rgba(0,0,0,.35);
+      }
+      .toplink {
+        display: inline-block;
+        margin-bottom: 34px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .updated {
+        color: #94a3b8;
+        margin-bottom: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <a class="toplink" href="/">← Back to Bonzoli</a>
+
+      <div class="card">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: May 12, 2026</p>
+
+        <p>
+          Bonzoli Technology Group respects your privacy. This Privacy Policy explains how we may collect, use, and protect information submitted through this website and related Bonzoli Technology Group communications.
+        </p>
+
+        <h2>Information We May Collect</h2>
+        <p>
+          We may collect information you voluntarily provide, including your name, email address, message content, company name, project interest, partnership inquiry, investment inquiry, or other information submitted through contact forms or direct communications.
+        </p>
+
+        <h2>How We Use Information</h2>
+        <p>We may use submitted information to:</p>
+        <ul>
+          <li>Respond to inquiries and messages.</li>
+          <li>Evaluate partnership, media, product, investment, or business opportunities.</li>
+          <li>Improve our website, products, and communications.</li>
+          <li>Maintain internal records related to business development and product feedback.</li>
+        </ul>
+
+        <h2>Analytics and Website Data</h2>
+        <p>
+          We may use basic analytics tools to understand website traffic, pages visited, referring sources, device type, browser type, and general usage patterns. This information helps us improve the site and evaluate interest in Bonzoli ventures.
+        </p>
+
+        <h2>Sharing Information</h2>
+        <p>
+          We do not sell personal information. We may share information with trusted service providers who help operate our website, manage communications, host data, or support business operations. We may also disclose information if required by law or to protect our rights, users, or business.
+        </p>
+
+        <h2>Data Security</h2>
+        <p>
+          We use reasonable administrative, technical, and organizational measures to protect information. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+        </p>
+
+        <h2>Third-Party Links</h2>
+        <p>
+          This website may link to other websites, products, platforms, or ventures. We are not responsible for the privacy practices, content, or policies of third-party websites.
+        </p>
+
+        <h2>Your Choices</h2>
+        <p>
+          You may contact us to request that we update, correct, or delete information you previously submitted, subject to reasonable business, legal, or operational limitations.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this Privacy Policy may be sent to:
+          <a href="mailto:info@bonzoli.com"></a>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
+EOF
