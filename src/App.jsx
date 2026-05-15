@@ -266,11 +266,11 @@ export default function App() {
           </nav>
 
           <a
-            href="#contact"
-            className="ml-6 hidden rounded-full bg-white px-5 py-2 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/10 transition hover:bg-cyan-100 md:inline-flex"
-          >
-            Work With Us
-          </a>
+  href="#contact"
+  className="ml-6 hidden rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 px-5 py-2 text-white font-bold shadow-lg transition hover:scale-[1.02] md:inline-flex"
+>
+  Work With Us
+</a>
 
           <button
             type="button"
