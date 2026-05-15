@@ -8,6 +8,7 @@ const navItems = [
   { label: "Products", href: "#products" },
   { label: "What We Build", href: "#build" },
   { label: "Approach", href: "#approach" },
+  { label: "Prospectus", href: "/prospectus.html" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -638,6 +639,7 @@ export default function App() {
             <a href="#approach" className="hover:text-white">
               Approach
             </a>
+            <a href="/prospectus.html" className="hover:text-white">Prospectus</a>
             <a href="#contact" className="hover:text-white">
               Contact
             </a>
