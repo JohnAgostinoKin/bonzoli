@@ -1,19 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bonzoli Investor Prospectus</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonzoli Investor Prospectus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#050814] text-white font-sans flex flex-col items-center justify-center min-h-screen p-8">
-  <img src="/bonzoli-site-icon.png" alt="Bonzoli Logo" class="h-32 w-32 mb-6 rounded-3xl"/>
-  <h1 class="text-4xl font-black mb-4 text-center">Bonzoli Technology Group</h1>
-  <p class="text-center text-slate-300 max-w-xl mb-6">
-    Coming soon: our full investor overview. In the meantime, reach out directly.
-  </p>
-  <a href="mailto:info@bonzoli.com" class="rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 px-6 py-3 text-white font-bold hover:scale-105 transition">
-    Contact Us
-  </a>
+
+<body class="bg-[#050814] text-white font-sans min-h-screen">
+  <main class="min-h-screen flex flex-col items-center justify-center px-6 py-16 text-center">
+    <img 
+      src="/bonzoli-site-icon.png" 
+      alt="Bonzoli Technology Group Logo" 
+      class="h-28 w-28 mb-8 rounded-3xl shadow-2xl shadow-blue-500/20"
+    />
+
+    <p class="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-cyan-300">
+      Investor Prospectus
+    </p>
+
+    <h1 class="max-w-4xl text-4xl md:text-6xl font-black leading-tight mb-6">
+      Bonzoli Technology Group
+    </h1>
+
+    <p class="max-w-2xl text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
+      Building a portfolio of human-centered technology brands, led by Tell Bubba,
+      an AI-powered consumer advocacy platform.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+  href="/bonzoli-investor-deck.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  View Investor Deck
+</a>
+
+      <a 
+        href="mailto:invest@bonzoli.com"
+        class="rounded-full border border-white/20 bg-white/10 px-8 py-4 text-white font-bold hover:bg-white/15 transition"
+      >
+        Contact Bonzoli
+      </a>
+    </div>
+
+    <p class="mt-10 max-w-2xl text-sm text-slate-500">
+      Confidential investor materials. For discussion purposes only. Not an offer to sell
+      or solicitation to buy securities.
+    </p>
+  </main>
 </body>
 </html>
